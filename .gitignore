@@ -11,22 +11,11 @@
 .idea
 
 # Folders
-vendor
-bin
-build
+/vendor
+/build
 
-# Binaries
-bitcoinpay
-bitcoinpay.exe
 *.zip
 *.tar.gz
-cmd/findcheckpoint/findcheckpoint
-cmd/ngen/ngen
-cmd/nx-eth/nx-eth
-cmd/nx-hd/nx-hd
-cmd/payledger/payledger
-cmd/bitcoinpay/bitcoinpay
-cmd/rlpdump/rlpdump
 *_checksum.txt
 
 # Go
