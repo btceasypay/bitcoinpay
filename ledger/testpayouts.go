@@ -1,0 +1,4 @@
+package ledger
+
+func initTest() {
+}
