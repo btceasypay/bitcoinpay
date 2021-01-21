@@ -89,4 +89,10 @@ func Ledger(tx *types.Transaction, netType protocol.Network) {
 			})
 		}
 	}
+
+	if len(tx.TxOut) <= 0 {
+		tx.AddTxOut(&types.TxOutput{
+			Amount: 0,
+		})
+	}
 }
