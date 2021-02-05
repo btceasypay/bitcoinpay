@@ -31,23 +31,23 @@ const (
 
 // String returns the unit as a string.  For recognized units, the SI
 // prefix is used, or "Atom" for the base unit.  For all unrecognized
-// units, "1eN BPAY" is returned, where N is the AmountUnit.
+// units, "1eN BTP" is returned, where N is the AmountUnit.
 func (u AmountUnit) String() string {
 	switch u {
 	case AmountMegaCoin:
-		return "MBPAY"
+		return "MBTP"
 	case AmountKiloCoin:
-		return "kBPAY"
+		return "kBTP"
 	case AmountCoin:
-		return "BPAY"
+		return "BTP"
 	case AmountMilliCoin:
-		return "mBPAY"
+		return "mBTP"
 	case AmountMicroCoin:
-		return "μBPAY"
+		return "μBTP"
 	case AmountAtom:
-		return "AtomBPAY"
+		return "AtomBTP"
 	default:
-		return "1e" + strconv.FormatInt(int64(u), 10) + " BPAY"
+		return "1e" + strconv.FormatInt(int64(u), 10) + " BTP"
 	}
 }
 

@@ -401,9 +401,9 @@ func main() {
 TXHASH is a Base16 transaction hash. INDEX is the 32 bit input index
 in the context of the transaction. SEQUENCE is the optional 32 bit 
 input sequence and defaults to the maximum value.`)
-	txEncodeCmd.Var(&txOutputs, "o", `The set of transaction output data encoded as TARGET:BPAY. 
+	txEncodeCmd.Var(&txOutputs, "o", `The set of transaction output data encoded as TARGET:BTP. 
 TARGET is an address (pay-to-pubkey-hash or pay-to-script-hash).
-BPAY is the 64 bit spend amount in bitcoinpay.`)
+BTP is the 64 bit spend amount in bitcoinpay.`)
 
 	txSignCmd := flag.NewFlagSet("tx-sign", flag.ExitOnError)
 	txSignCmd.Usage = func() {

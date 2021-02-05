@@ -72,7 +72,7 @@ var TestNetParams = Params{
 				// | 2020-08-30 10:31:46 | 1598754706 | 192266
 				// | 2020-09-15 12:00 | 1600142400 | 238522
 				// The soft forking mainHeight was calculated according to the average time of 30s
-				// In other words, BPAY will be produced by the pow of BitcoinpayKeccak256 only after mainHeight arrived 238522
+				// In other words, BTP will be produced by the pow of BitcoinpayKeccak256 only after mainHeight arrived 238522
 				MainHeight: 100000,
 			},
 		},

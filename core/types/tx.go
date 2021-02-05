@@ -1051,7 +1051,7 @@ type TxDesc struct {
 	// Fee is the total fee the transaction associated with the entry pays.
 	Fee int64
 
-	// FeePerKB is the fee the transaction pays in BPAY per 1000 bytes.
+	// FeePerKB is the fee the transaction pays in BTP per 1000 bytes.
 	FeePerKB int64
 }
 
