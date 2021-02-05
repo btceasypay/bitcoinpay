@@ -92,10 +92,11 @@ var TestNetParams = Params{
 	RetargetAdjustmentFactor: 2,
 
 	// Subsidy parameters.
-	BaseSubsidy:              5000000000, // 50 Coin , daily supply is 50*60*24 = 72000 ~ 72000 * 2 (DAG factor)
+	// Total subsidy(>=210 million) = miner subsidy(23800246) + preinstall(186199754)
+	BaseSubsidy:              625000000, // 6.25 Coin
 	MulSubsidy:               100,
 	DivSubsidy:               200,
-	SubsidyReductionInterval: 2100000, // >=210 million ->  >=130 year
+	SubsidyReductionInterval: 2100000, // >=210 million ->  >=120 year
 	WorkRewardProportion:  10,
 	StakeRewardProportion: 0,
 	BlockTaxProportion:    0,
