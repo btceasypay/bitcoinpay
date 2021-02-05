@@ -19,9 +19,9 @@ import (
 var testNetPowLimit = new(big.Int).Sub(new(big.Int).Lsh(common.Big1, 255), common.Big1)
 
 // target time per block unit second(s)
-const testTargetTimePerBlock = 30
+const testTargetTimePerBlock = 60
 
-// Difficulty check interval is about 60*30 = 30 mins
+// Difficulty check interval is about 60*60 = 60 mins
 const testWorkDiffWindowSize = 60
 
 // TestNetParams defines the network parameters for the test network.
@@ -92,7 +92,7 @@ var TestNetParams = Params{
 	RetargetAdjustmentFactor: 2,                                                             // equal to 2 hour vs. 4
 
 	// Subsidy parameters.
-	BaseSubsidy:              12000000000, // 120 Coin , daily supply is 120*2*60*24 = 345600 ~ 345600 * 2 (DAG factor)
+	BaseSubsidy:              1250000000, // 12.5 Coin , daily supply is 12.5*2*60*24 = 18000 ~ 18000 * 2 (DAG factor)
 	MulSubsidy:               100,
 	DivSubsidy:               10000000000000,   // Coin-base reward reduce to zero at 1540677 blocks created
 	SubsidyReductionInterval: 1669066 - 541194, // 120 * 1669066 (blocks) *= 200287911 (200M) -> 579 ~ 289 days
