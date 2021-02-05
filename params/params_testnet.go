@@ -92,7 +92,7 @@ var TestNetParams = Params{
 	RetargetAdjustmentFactor: 2,
 
 	// Subsidy parameters.
-	// Total subsidy(>=210 million) = miner subsidy(23800246) + preinstall(186199754)
+	// Total subsidy(>=210 million) = miner subsidy(26249993) + preinstall(183749507)
 	BaseSubsidy:              625000000, // 6.25 Coin
 	MulSubsidy:               100,
 	DivSubsidy:               200,
