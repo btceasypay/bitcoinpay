@@ -89,20 +89,19 @@ var TestNetParams = Params{
 	MaxTxSize:                1000000,
 	TargetTimePerBlock:       time.Second * testTargetTimePerBlock,
 	TargetTimespan:           time.Second * testTargetTimePerBlock * testWorkDiffWindowSize, // TimePerBlock * WindowSize
-	RetargetAdjustmentFactor: 2,                                                             // equal to 2 hour vs. 4
+	RetargetAdjustmentFactor: 2,
 
 	// Subsidy parameters.
-	BaseSubsidy:              1250000000, // 12.5 Coin , daily supply is 12.5*2*60*24 = 18000 ~ 18000 * 2 (DAG factor)
+	BaseSubsidy:              5000000000, // 50 Coin , daily supply is 50*60*24 = 72000 ~ 72000 * 2 (DAG factor)
 	MulSubsidy:               100,
-	DivSubsidy:               10000000000000,   // Coin-base reward reduce to zero at 1540677 blocks created
-	SubsidyReductionInterval: 1669066 - 541194, // 120 * 1669066 (blocks) *= 200287911 (200M) -> 579 ~ 289 days
-	// && subsidy has to reduce the 0.8.5 mining_rewarded blocks (541194)
+	DivSubsidy:               200,
+	SubsidyReductionInterval: 2100000, // >=210 million ->  >=130 year
 	WorkRewardProportion:  10,
 	StakeRewardProportion: 0,
 	BlockTaxProportion:    0,
 
 	// Maturity
-	CoinbaseMaturity: 720, // coinbase required 720 * 30 = 6 hours before repent
+	CoinbaseMaturity: 720, // coinbase required 720 * 60 = 12 hours before repent
 
 	// Checkpoints ordered from oldest to newest.
 	Checkpoints: []Checkpoint{},
