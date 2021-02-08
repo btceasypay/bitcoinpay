@@ -56,24 +56,10 @@ var TestNetParams = Params{
 			{
 				Blake2bDPercent:            0,
 				X16rv3Percent:              0,
-				BitcoinpayKeccak256Percent: 100,
-				CuckaroomPercent:           0,
-				CuckatooPercent:            0,
-				MainHeight:                 0,
-			},
-			{
-				Blake2bDPercent:            0,
-				X16rv3Percent:              0,
 				BitcoinpayKeccak256Percent: 0,
-				CuckaroomPercent:           100,
-				CuckatooPercent:            0,
-				// | time	| timestamp	| mainHeight |
-				// | ---| --- | --- |
-				// | 2020-08-30 10:31:46 | 1598754706 | 192266
-				// | 2020-09-15 12:00 | 1600142400 | 238522
-				// The soft forking mainHeight was calculated according to the average time of 30s
-				// In other words, BTP will be produced by the pow of BitcoinpayKeccak256 only after mainHeight arrived 238522
-				MainHeight: 100000,
+				CuckaroomPercent:           0,
+				CuckarooPercent:            100,
+				MainHeight:                 0,
 			},
 		},
 		// after this height the big graph will be the main pow graph
@@ -97,9 +83,9 @@ var TestNetParams = Params{
 	MulSubsidy:               100,
 	DivSubsidy:               200,
 	SubsidyReductionInterval: 2100000, // >=210 million ->  >=120 year
-	WorkRewardProportion:  10,
-	StakeRewardProportion: 0,
-	BlockTaxProportion:    0,
+	WorkRewardProportion:     10,
+	StakeRewardProportion:    0,
+	BlockTaxProportion:       0,
 
 	// Maturity
 	CoinbaseMaturity: 720, // coinbase required 720 * 60 = 12 hours before repent
