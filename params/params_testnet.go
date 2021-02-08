@@ -29,8 +29,8 @@ var TestNetParams = Params{
 	Name:        "testnet",
 	Net:         protocol.TestNet,
 	DefaultPort: "19130",
-	DNSSeeds:    []DNSSeed{
-		// {"seed.biteasypay.xyz", true},
+	DNSSeeds: []DNSSeed{
+		{"seed.biteasypay.xyz", true},
 	},
 
 	// Chain parameters
