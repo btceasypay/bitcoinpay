@@ -29,8 +29,8 @@ var TestNetParams = Params{
 	Name:        "testnet",
 	Net:         protocol.TestNet,
 	DefaultPort: "19130",
-	DNSSeeds: []DNSSeed{
-		{"seed.biteasypay.xyz", true},
+	DNSSeeds:    []DNSSeed{
+		// {"seed.biteasypay.xyz", true},
 	},
 
 	// Chain parameters
@@ -48,7 +48,7 @@ var TestNetParams = Params{
 		//hash ffffffffffffffff000000000000000000000000000000000000000000000000 corresponding difficulty is 48 for edge bits 24
 		// Uniform field type uint64 value is 48 . bigToCompact the uint32 value
 		// 24 edge_bits only need hash 1*4 times use for privnet if GPS is 2. need 50 /2 * 4 = 1min find once
-		CuckarooMinDifficulty:  0x2018000, // 96 * 4 = 384
+		CuckarooMinDifficulty:  0x1300000, // 48
 		CuckatooMinDifficulty:  0x2074000, // 1856
 		CuckaroomMinDifficulty: 0x1300000, // 48
 
@@ -56,9 +56,9 @@ var TestNetParams = Params{
 			{
 				Blake2bDPercent:            0,
 				X16rv3Percent:              0,
-				BitcoinpayKeccak256Percent: 0,
 				CuckaroomPercent:           0,
-				CuckarooPercent:            100,
+				BitcoinpayKeccak256Percent: 1,
+				CuckarooPercent:            99,
 				MainHeight:                 0,
 			},
 		},
